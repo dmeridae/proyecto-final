@@ -1,0 +1,45 @@
+{
+  "restaurant": "La Casa del Sabor",
+  "categories": [
+    {
+      "name": "Entradas",
+      "items": [
+        {"id": "E1", "name": "Nachos con queso", "price": 6.50, "description": "Totopos crujientes con queso fundido, jalapeños y guacamole", "allergens": ["lácteos", "gluten"]},
+        {"id": "E2", "name": "Alitas BBQ", "price": 8.00, "description": "8 piezas de alitas con salsa BBQ casera", "allergens": []},
+        {"id": "E3", "name": "Ensalada César", "price": 7.50, "description": "Lechuga romana, crutones, parmesano y aderezo César", "allergens": ["lácteos", "gluten", "huevo"]}
+      ]
+    },
+    {
+      "name": "Platos fuertes",
+      "items": [
+        {"id": "P1", "name": "Hamburguesa clásica", "price": 12.00, "description": "Carne 180g, lechuga, tomate, cebolla, pepinillos y papas", "allergens": ["gluten", "lácteos"]},
+        {"id": "P2", "name": "Hamburguesa doble", "price": 15.50, "description": "Doble carne 180g, queso cheddar, bacon y papas", "allergens": ["gluten", "lácteos"]},
+        {"id": "P3", "name": "Pizza margarita mediana", "price": 14.00, "description": "Salsa de tomate, mozzarella fresca y albahaca", "allergens": ["gluten", "lácteos"]},
+        {"id": "P4", "name": "Pasta Alfredo", "price": 13.50, "description": "Fettuccine con salsa cremosa Alfredo y pollo a la parrilla", "allergens": ["gluten", "lácteos"]},
+        {"id": "P5", "name": "Tacos al pastor (3)", "price": 10.00, "description": "Tres tacos con carne al pastor, piña, cilantro y cebolla", "allergens": ["gluten"]}
+      ]
+    },
+    {
+      "name": "Bebidas",
+      "items": [
+        {"id": "B1", "name": "Refresco", "price": 2.50, "description": "Coca-Cola, Sprite o Fanta 600ml", "allergens": []},
+        {"id": "B2", "name": "Agua natural", "price": 1.50, "description": "Botella 500ml", "allergens": []},
+        {"id": "B3", "name": "Limonada natural", "price": 3.00, "description": "Limonada recién preparada 500ml", "allergens": []},
+        {"id": "B4", "name": "Cerveza artesanal", "price": 5.00, "description": "Cerveza local 355ml", "allergens": ["gluten"]}
+      ]
+    },
+    {
+      "name": "Postres",
+      "items": [
+        {"id": "D1", "name": "Brownie con helado", "price": 5.50, "description": "Brownie de chocolate caliente con bola de vainilla", "allergens": ["gluten", "lácteos", "huevo"]},
+        {"id": "D2", "name": "Flan napolitano", "price": 4.50, "description": "Flan casero con caramelo", "allergens": ["lácteos", "huevo"]}
+      ]
+    }
+  ],
+  "policies": {
+    "delivery_fee": 3.00,
+    "minimum_order_delivery": 15.00,
+    "estimated_prep_minutes": 25,
+    "payment_methods": ["efectivo", "tarjeta", "transferencia"]
+  }
+}

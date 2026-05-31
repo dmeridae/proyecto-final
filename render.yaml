@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: callcenter-backend
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: TWILIO_PHONE_NUMBER
+        sync: false
+      - key: PUBLIC_BASE_URL
+        sync: false
+      - key: CORS_ORIGINS
+        value: https://callcenter-frontend.onrender.com,http://localhost:5173
